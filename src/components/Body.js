@@ -1,16 +1,29 @@
-
+import { useState } from "react";
 import RestrauntCard from "./RestrurantCard";
 
- 
+const Body = () => { 
 
-const Body = ()=>{
-    return(
-      <div className="body_wrapper">
-         <RestrauntCard/>
-       <RestrauntCard/>
-       <RestrauntCard/>
-       <RestrauntCard/>
+const [searchText, setSearchText] = useState();
+
+  return (
+    <>
+      <div className="searchContainer">
+        <input
+          type="text"
+          className="search-input"
+          value={searchText}
+          placeholder="Search"
+          onChange={(e) => onChangeInput }
+        />
+        <button>Search</button>
       </div>
-    )
- }
- export default Body;
+      <div className="body_wrapper">
+        <RestrauntCard />
+        <RestrauntCard />
+        <RestrauntCard />
+        <RestrauntCard />
+      </div>
+    </>
+  );
+};
+export default Body;

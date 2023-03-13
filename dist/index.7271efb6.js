@@ -27463,39 +27463,75 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _restrurantCard = require("./RestrurantCard");
 var _restrurantCardDefault = parcelHelpers.interopDefault(_restrurantCard);
+var _s = $RefreshSig$();
 const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body_wrapper",
+    _s();
+    const [searchText, setSearchText] = (0, _react.useState)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrurantCardDefault.default), {}, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 4,
-                columnNumber: 10
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrurantCardDefault.default), {}, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 5,
-                columnNumber: 8
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrurantCardDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "searchContainer",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        className: "search-input",
+                        value: searchText,
+                        placeholder: "Search",
+                        onChange: (e)=>onChangeInput
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Body.js",
                 lineNumber: 6,
-                columnNumber: 8
+                columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrurantCardDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "body_wrapper",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrurantCardDefault.default), {}, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrurantCardDefault.default), {}, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 12,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrurantCardDefault.default), {}, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrurantCardDefault.default), {}, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 7,
-                columnNumber: 8
+                lineNumber: 10,
+                columnNumber: 7
             }, undefined)
         ]
-    }, void 0, true, {
-        fileName: "src/components/Body.js",
-        lineNumber: 3,
-        columnNumber: 10
-    }, undefined);
+    }, void 0, true);
 };
+_s(Body, "muso5CgnNqnVrib8ka1UAp0BGBA=");
 _c = Body;
 exports.default = Body;
 var _c;
