@@ -27471,7 +27471,7 @@ var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _s = $RefreshSig$();
 function filterData(searchText, allrestaurants) {
-    const filterDatax = allrestaurants.filter((restaurant)=>restaurant.data.name.includes(searchText));
+    const filterDatax = allrestaurants.filter((restaurant)=>restaurant?.data?.name?.toLowerCase()?.includes(searchText?.toLowerCase()));
     return filterDatax;
 }
 const Body = ()=>{
@@ -27488,10 +27488,14 @@ const Body = ()=>{
         setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
         setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     }
-    return allrestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    //below we have early return
+    //no restraureant no CanvasRenderingContext2D
+    if (!allrestaurants) return null;
+    //to show if all empty
+    return allrestaurants?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 22,
-        columnNumber: 40
+        lineNumber: 30,
+        columnNumber: 41
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27505,40 +27509,47 @@ const Body = ()=>{
                         onChange: (e)=>setSearchText(e.target.value)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 24,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         onClick: ()=>{
                             const data = filterData(searchText, allrestaurants);
+                            setSearchText("");
                             setFilteredRestaurants(data);
                         },
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 25,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 23,
+                lineNumber: 31,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "body_wrapper",
-                children: filteredrestaurants.map((restaurant)=>{
+                children: filteredrestaurants?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "No rest FOUND"
+                }, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 42,
+                    columnNumber: 46
+                }, undefined) : filteredrestaurants?.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrurantCardDefault.default), {
                         ...restaurant.data
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 34,
+                        lineNumber: 43,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 32,
+                lineNumber: 41,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27555,7 +27566,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestrurantCard":"4z7n9","react":"21dqq","./confige":"o3N3h","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj"}],"4z7n9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./RestrurantCard":"4z7n9","react":"21dqq","./confige":"o3N3h","./Shimmer":"g6ZGj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4z7n9":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e097 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27597,7 +27608,7 @@ const RestrauntCard = ({ name , cuisines , rating , cloudinaryImageId , costForT
                 className: "cuisines",
                 children: [
                     " ",
-                    cuisines
+                    cuisines?.join(", ")
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestrurantCard.js",
