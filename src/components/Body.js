@@ -1,9 +1,30 @@
-import { useState } from "react";
 import RestrauntCard from "./RestrurantCard";
+import { useEffect, useState } from "react"; 
+import {REST_LIST} from "./confige";
+import { SWIGGY_API } from "./confige";
 
-const Body = () => { 
+function filterData(searchText, restaurants) {
+   const filterDatax =  restaurants.filter((restaurant)=> restaurant.name.includes(searchText))
+   
+   return filterDatax;
+}
 
-const [searchText, setSearchText] = useState();
+ 
+
+const Body = () => {
+  const [restaurants, setRestaurants] = useState([]);
+  const [searchText, setSearchText] = useState("");
+
+  useEffect(()=>{
+    fetchDatafromAPI()
+  },[])
+
+  async function fetchDatafromAPI(){
+    const data = await fetch(SWIGGY_API);
+    const json = await data.json();
+    console.log(json)
+    setRestaurants(json?.data?.cards[2]?.data?.data?.cards)
+  }
 
   return (
     <>
@@ -13,15 +34,23 @@ const [searchText, setSearchText] = useState();
           className="search-input"
           value={searchText}
           placeholder="Search"
-          onChange={(e) => onChangeInput }
+          onChange={(e) => setSearchText(e.target.value)}
         />
-        <button>Search</button>
+        <button
+          onClick={() => {
+           const data =  filterData(searchText, restaurants);
+           setRestaurants(data)
+          }}
+        >
+          Search
+        </button>
       </div>
       <div className="body_wrapper">
-        <RestrauntCard />
-        <RestrauntCard />
-        <RestrauntCard />
-        <RestrauntCard />
+        {
+            restaurants.map((restaurant)=>{
+                return <RestrauntCard {...restaurant.data}  />
+            })
+        }
       </div>
     </>
   );

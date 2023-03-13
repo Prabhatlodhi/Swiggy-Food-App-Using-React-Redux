@@ -49,7 +49,7 @@
 }
 
 .restraurentImage {
-  width: 300px;
+  width: 95%;
 }
 
 .body_wrapper {
@@ -59,8 +59,7 @@
 }
 
 .card {
-  width: max-content;
-  border: 1px solid #bdbdbd;
+  width: 300px;
   margin: 20px;
   padding: 10px;
   transition: box-shadow .2s ease-out 50ms;
@@ -68,6 +67,28 @@
 
 .card:hover {
   box-shadow: 9px 9px 7px 8px #a2a2a24d;
+}
+
+.cuisines {
+  height: 30px;
+  font-size: 16px;
+}
+
+.restrocardDescription {
+  justify-content: space-between;
+  font-size: 12px;
+  display: flex;
+}
+
+.restName {
+  height: 55px;
+  padding: 5px 0;
+}
+
+.avgRating {
+  color: #f0f8ff;
+  background-color: coral;
+  padding: 1px 10px;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

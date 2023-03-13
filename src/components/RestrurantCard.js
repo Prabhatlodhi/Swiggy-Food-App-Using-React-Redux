@@ -1,12 +1,16 @@
-import { IMAGE_LINK_CDN } from "./confige"
+import { IMAGE_LINK_CDN } from "./confige"; 
 
-const RestrauntCard = ()=>{
+const RestrauntCard = ({ name, cuisines, rating, cloudinaryImageId, costForTwoString, maxDeliveryTime, avgRating })=>{
     return(
         <div className="card">
-            <img src={IMAGE_LINK_CDN + "kmjxpwf1obnibka2euhj"} alt="restraurantcard" className="restraurentImage" />
-            <h2>Bur</h2>
-            <h3>Bubbu bubu asas</h3>
-            <h4>4.2 stars</h4>
+            <img src={IMAGE_LINK_CDN + cloudinaryImageId} alt="restraurantcard" className="restraurentImage" />
+            <p className="restName"><b>{name}</b></p>
+             <p className="cuisines"> {cuisines}</p>
+             <div className="restrocardDescription">
+             <span className="avgRating">{avgRating}</span>
+             <span>{maxDeliveryTime} mins</span>
+             <span>{costForTwoString}</span>
+             </div>
         </div>
     )
  }

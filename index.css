@@ -57,7 +57,7 @@ box-shadow: 4px 2px 9px 2px rgba(85,83,105,1);
 }
 
 .restraurentImage{
-    width: 300px;
+    width: 95%;
 }
 
 .body_wrapper{
@@ -67,10 +67,9 @@ box-shadow: 4px 2px 9px 2px rgba(85,83,105,1);
 }
 
 .card{
-    width: max-content;
+    width: 300px;
     padding: 10px;
-    margin: 20px; 
-    border: 1px solid rgb(189, 189, 189);
+    margin: 20px;  
     
     transition: box-shadow 200ms ease-out 50ms;
 }
@@ -80,5 +79,25 @@ box-shadow: 4px 2px 9px 2px rgba(85,83,105,1);
     box-shadow: 9px 9px 7px 8px rgba(162, 162, 162, 0.3);
 }
 
+.cuisines{
+  font-size: 16px;
+  height: 30px;
+}
+
+.restrocardDescription{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
  
-   
+
+.restName{
+  height: 55px;
+  padding: 5px 0px;
+}
+
+.avgRating{
+  background-color: coral;
+  color: aliceblue;
+  padding: 1px 10px;
+}
