@@ -32,6 +32,11 @@
   box-shadow: 4px 2px 9px 2px #555369;
 }
 
+.btnlog {
+  width: 90px;
+  padding: 5px 10px;
+}
+
 .nav_item li {
   cursor: pointer;
   margin: 0 30px;
@@ -49,7 +54,7 @@
 }
 
 .restraurentImage {
-  width: 95%;
+  width: 100%;
 }
 
 .body_wrapper {
@@ -66,7 +71,7 @@
 .searchContainer input {
   width: 400px;
   height: 40px;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 50px 0 0 50px;
   padding: 15px;
 }
@@ -83,10 +88,18 @@
   width: 300px;
   height: 300px;
   background-color: #d9d9d9;
+  margin: 20px;
+}
+
+.shimmer_wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+  display: flex;
 }
 
 .card {
-  width: 300px;
+  width: 280px;
   margin: 20px;
   padding: 10px;
   transition: box-shadow .2s ease-out 50ms;
@@ -97,8 +110,8 @@
 }
 
 .cuisines {
-  height: 30px;
-  font-size: 16px;
+  padding-bottom: 30px;
+  font-size: 12px;
 }
 
 .restrocardDescription {
@@ -108,8 +121,9 @@
 }
 
 .restName {
-  height: 55px;
+  height: 60px;
   padding: 5px 0;
+  font-size: 19px;
 }
 
 .avgRating {

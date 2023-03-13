@@ -27168,8 +27168,10 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _brightColorfulPlayfulFunnyDonutsFoodCircleLogoGif = require("../../ImagesGif/Bright Colorful Playful Funny Donuts Food Circle Logo.gif");
 var _brightColorfulPlayfulFunnyDonutsFoodCircleLogoGifDefault = parcelHelpers.interopDefault(_brightColorfulPlayfulFunnyDonutsFoodCircleLogoGif);
+var _s = $RefreshSig$();
 const Title = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
         href: "/",
@@ -27179,24 +27181,26 @@ const Title = ()=>{
             className: "imageclass"
         }, void 0, false, {
             fileName: "src/components/HeaderComponent.js",
-            lineNumber: 4,
-            columnNumber: 13
+            lineNumber: 5,
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/HeaderComponent.js",
-        lineNumber: 3,
+        lineNumber: 4,
         columnNumber: 10
     }, undefined);
 };
 _c = Title;
 const HeaderComponent = ()=>{
+    _s();
+    const [isloggedIn, setIsloggedIn] = (0, _react.useState)(true);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "nav_wrapper ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "src/components/HeaderComponent.js",
-                lineNumber: 9,
-                columnNumber: 13
+                lineNumber: 11,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 className: "nav_item ",
@@ -27205,43 +27209,67 @@ const HeaderComponent = ()=>{
                         children: "Home"
                     }, void 0, false, {
                         fileName: "src/components/HeaderComponent.js",
-                        lineNumber: 11,
-                        columnNumber: 17
+                        lineNumber: 13,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "About Us"
                     }, void 0, false, {
                         fileName: "src/components/HeaderComponent.js",
-                        lineNumber: 12,
-                        columnNumber: 17
+                        lineNumber: 14,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Contact"
                     }, void 0, false, {
                         fileName: "src/components/HeaderComponent.js",
-                        lineNumber: 13,
-                        columnNumber: 17
+                        lineNumber: 15,
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Cart"
                     }, void 0, false, {
                         fileName: "src/components/HeaderComponent.js",
-                        lineNumber: 14,
-                        columnNumber: 17
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: isloggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: ()=>setIsloggedIn(!isloggedIn),
+                            className: "btnlog",
+                            children: " Login"
+                        }, void 0, false, {
+                            fileName: "src/components/HeaderComponent.js",
+                            lineNumber: 18,
+                            columnNumber: 25
+                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "btnlog",
+                            onClick: ()=>setIsloggedIn(!isloggedIn),
+                            children: "Logout"
+                        }, void 0, false, {
+                            fileName: "src/components/HeaderComponent.js",
+                            lineNumber: 18,
+                            columnNumber: 113
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/HeaderComponent.js",
+                        lineNumber: 17,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/HeaderComponent.js",
-                lineNumber: 10,
-                columnNumber: 13
+                lineNumber: 12,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/HeaderComponent.js",
-        lineNumber: 8,
+        lineNumber: 10,
         columnNumber: 10
     }, undefined);
 };
+_s(HeaderComponent, "iAhGtH8hMyMhhDY/JaiGwfIzqUc=");
 _c1 = HeaderComponent;
 exports.default = HeaderComponent;
 var _c, _c1;
@@ -27253,7 +27281,7 @@ $RefreshReg$(_c1, "HeaderComponent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../ImagesGif/Bright Colorful Playful Funny Donuts Food Circle Logo.gif":"bVqLm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bVqLm":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../ImagesGif/Bright Colorful Playful Funny Donuts Food Circle Logo.gif":"bVqLm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"bVqLm":[function(require,module,exports) {
 module.exports = require("f2bed323c1204065").getBundleURL("aXMci") + "Bright Colorful Playful Funny Donuts Food Circle Logo.0b0e2b80.gif" + "?" + Date.now();
 
 },{"f2bed323c1204065":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -27739,15 +27767,98 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Shimmer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "shimmer",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: " "
-        }, void 0, false, {
-            fileName: "src/components/Shimmer.js",
-            lineNumber: 3,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        className: "shimmer_wrapper",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 3,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer",
+                children: " "
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 13,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Shimmer.js",
         lineNumber: 2,
         columnNumber: 10
