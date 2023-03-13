@@ -63,6 +63,11 @@
   border: 1px solid #bdbdbd;
   margin: 20px;
   padding: 10px;
+  transition: box-shadow .2s ease-out 50ms;
+}
+
+.card:hover {
+  box-shadow: 9px 9px 7px 8px #a2a2a24d;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
