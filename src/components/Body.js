@@ -1,10 +1,10 @@
 import RestrauntCard from "./RestrurantCard";
-import { useEffect, useState } from "react"; 
-import {REST_LIST} from "./confige";
+import { useEffect, useState } from "react";  
 import { SWIGGY_API } from "./confige";
+import Shimmer from "./Shimmer";
 
-function filterData(searchText, restaurants) {
-   const filterDatax =  restaurants.filter((restaurant)=> restaurant.name.includes(searchText))
+function filterData(searchText, allrestaurants) {
+   const filterDatax =  allrestaurants.filter((restaurant)=> restaurant.data.name.includes(searchText))
    
    return filterDatax;
 }
@@ -12,7 +12,8 @@ function filterData(searchText, restaurants) {
  
 
 const Body = () => {
-  const [restaurants, setRestaurants] = useState([]);
+  const [allrestaurants, setAllRestaurants] = useState([]);
+  const [filteredrestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   useEffect(()=>{
@@ -22,11 +23,12 @@ const Body = () => {
   async function fetchDatafromAPI(){
     const data = await fetch(SWIGGY_API);
     const json = await data.json();
-    console.log(json)
-    setRestaurants(json?.data?.cards[2]?.data?.data?.cards)
+     
+    setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards)
+    setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards)
   }
 
-  return (
+  return (allrestaurants.length === 0) ? <Shimmer/> : (
     <>
       <div className="searchContainer">
         <input
@@ -38,8 +40,8 @@ const Body = () => {
         />
         <button
           onClick={() => {
-           const data =  filterData(searchText, restaurants);
-           setRestaurants(data)
+           const data =  filterData(searchText, allrestaurants);
+           setFilteredRestaurants(data)
           }}
         >
           Search
@@ -47,7 +49,7 @@ const Body = () => {
       </div>
       <div className="body_wrapper">
         {
-            restaurants.map((restaurant)=>{
+            filteredrestaurants.map((restaurant)=>{
                 return <RestrauntCard {...restaurant.data}  />
             })
         }
