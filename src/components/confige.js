@@ -4,7 +4,7 @@ export const SWIGGY_API = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=2
 
 export const REST_MENU = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.6105073&lng=77.1145653&restaurantId=145558&submitAction=ENTER"
 
-export const aa = "https://www.swiggy.com/dapi/menu/v4/full?lat12.9351929&lng=77.62448069999999&menuId=229"
+export const LINK_FOR_RES_MENU = "https://www.swiggy.com/dapi/menu/v4/full?lat12.9351929&lng=77.62448069999999&menuId="
 
 export const REST_LIST = [
     {

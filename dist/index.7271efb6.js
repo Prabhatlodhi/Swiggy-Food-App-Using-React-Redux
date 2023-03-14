@@ -32965,12 +32965,12 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IMAGE_LINK_CDN", ()=>IMAGE_LINK_CDN);
 parcelHelpers.export(exports, "SWIGGY_API", ()=>SWIGGY_API);
 parcelHelpers.export(exports, "REST_MENU", ()=>REST_MENU);
-parcelHelpers.export(exports, "aa", ()=>aa);
+parcelHelpers.export(exports, "LINK_FOR_RES_MENU", ()=>LINK_FOR_RES_MENU);
 parcelHelpers.export(exports, "REST_LIST", ()=>REST_LIST);
 const IMAGE_LINK_CDN = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 const SWIGGY_API = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6105073&lng=77.1145653&page_type=DESKTOP_WEB_LISTING";
 const REST_MENU = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.6105073&lng=77.1145653&restaurantId=145558&submitAction=ENTER";
-const aa = "https://www.swiggy.com/dapi/menu/v4/full?lat12.9351929&lng=77.62448069999999&menuId=229";
+const LINK_FOR_RES_MENU = "https://www.swiggy.com/dapi/menu/v4/full?lat12.9351929&lng=77.62448069999999&menuId=";
 const REST_LIST = [
     {
         image: "https://www.shutterstock.com/image-photo/group-happy-friends-having-breakfast-600w-1201677928.jpg",
@@ -56195,9 +56195,8 @@ var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
 var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _confige = require("./confige");
 var _s = $RefreshSig$();
-// import { REST_MENU } from "./confige";
-// import { IMAGE_LINK_CDN } from "./confige";
 const RestrauntDetails = ()=>{
     _s();
     const [specificRestraurant, setSpecificRestraurant] = (0, _react.useState)(null);
@@ -56210,14 +56209,14 @@ const RestrauntDetails = ()=>{
     }, []);
     //cards[0].card.card.info.name
     async function getSpecificRestrauMenu() {
-        const data = await fetch(`https://www.swiggy.com/dapi/menu/v4/full?lat12.9351929&lng=77.62448069999999&menuId=${resid}`);
+        const data = await fetch((0, _confige.LINK_FOR_RES_MENU) + resid);
         const json = await data.json();
         setSpecificRestraurant(json.data);
     }
     // console.log(params);json?.data?.cards[2]?.data?.data?.cards
     if (!specificRestraurant) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/RestrauntDetails.js",
-        lineNumber: 31,
+        lineNumber: 30,
         columnNumber: 12
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56236,28 +56235,28 @@ const RestrauntDetails = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 36,
+                                lineNumber: 35,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: specificRestraurant.name
                             }, void 0, false, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 37,
+                                lineNumber: 36,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + specificRestraurant.cloudinaryImageId,
+                                src: (0, _confige.IMAGE_LINK_CDN) + specificRestraurant.cloudinaryImageId,
                                 alt: ""
                             }, void 0, false, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 38,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestrauntDetails.js",
-                        lineNumber: 35,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56266,47 +56265,47 @@ const RestrauntDetails = ()=>{
                                 children: specificRestraurant.area
                             }, void 0, false, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 41,
+                                lineNumber: 40,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: specificRestraurant.city
                             }, void 0, false, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 42,
+                                lineNumber: 41,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: specificRestraurant.avgRatingString
                             }, void 0, false, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 43,
+                                lineNumber: 42,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: specificRestraurant.costForTwoMsg
                             }, void 0, false, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 44,
+                                lineNumber: 43,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: specificRestraurant?.cuisines?.join(", ")
                             }, void 0, false, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 45,
+                                lineNumber: 44,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestrauntDetails.js",
-                        lineNumber: 40,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestrauntDetails.js",
-                lineNumber: 34,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56316,7 +56315,7 @@ const RestrauntDetails = ()=>{
                         children: "Menu"
                     }, void 0, false, {
                         fileName: "src/components/RestrauntDetails.js",
-                        lineNumber: 50,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -56325,15 +56324,25 @@ const RestrauntDetails = ()=>{
                                     className: "individualItem",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "menudes",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     children: [
                                                         " ",
-                                                        item.name
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                                            children: [
+                                                                item.name,
+                                                                " "
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/RestrauntDetails.js",
+                                                            lineNumber: 55,
+                                                            columnNumber: 24
+                                                        }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/RestrauntDetails.js",
-                                                    lineNumber: 56,
+                                                    lineNumber: 55,
                                                     columnNumber: 20
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -56343,23 +56352,23 @@ const RestrauntDetails = ()=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/RestrauntDetails.js",
-                                                    lineNumber: 57,
+                                                    lineNumber: 56,
                                                     columnNumber: 20
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     children: [
-                                                        " ",
-                                                        item.avgRating
+                                                        " ₹ ",
+                                                        item.price / 100
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/RestrauntDetails.js",
-                                                    lineNumber: 58,
+                                                    lineNumber: 57,
                                                     columnNumber: 20
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/RestrauntDetails.js",
-                                            lineNumber: 55,
+                                            lineNumber: 54,
                                             columnNumber: 20
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56369,40 +56378,40 @@ const RestrauntDetails = ()=>{
                                                 className: "menuImage"
                                             }, void 0, false, {
                                                 fileName: "src/components/RestrauntDetails.js",
-                                                lineNumber: 61,
+                                                lineNumber: 60,
                                                 columnNumber: 20
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/RestrauntDetails.js",
-                                            lineNumber: 60,
+                                            lineNumber: 59,
                                             columnNumber: 20
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/RestrauntDetails.js",
-                                    lineNumber: 54,
+                                    lineNumber: 53,
                                     columnNumber: 17
                                 }, undefined)
                             }, item.id, false, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 52,
+                                lineNumber: 51,
                                 columnNumber: 73
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/components/RestrauntDetails.js",
-                        lineNumber: 51,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestrauntDetails.js",
-                lineNumber: 49,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestrauntDetails.js",
-        lineNumber: 33,
+        lineNumber: 32,
         columnNumber: 10
     }, undefined);
 };
@@ -56421,6 +56430,6 @@ $RefreshReg$(_c, "RestrauntDetails");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Shimmer":"g6ZGj"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequirecce3")
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Shimmer":"g6ZGj","./confige":"o3N3h"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequirecce3")
 
 //# sourceMappingURL=index.7271efb6.js.map
