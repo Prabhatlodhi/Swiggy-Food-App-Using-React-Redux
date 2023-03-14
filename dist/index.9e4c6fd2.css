@@ -106,12 +106,16 @@
 }
 
 .card:hover {
-  box-shadow: 9px 9px 7px 8px #a2a2a24d;
+  box-shadow: 3px 3px 7px 7px #a4a4a44d;
 }
 
 .cuisines {
   padding-bottom: 30px;
   font-size: 12px;
+}
+
+.star {
+  font-size: 10px;
 }
 
 .restrocardDescription {
