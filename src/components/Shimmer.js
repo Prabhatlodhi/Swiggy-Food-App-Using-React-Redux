@@ -1,19 +1,12 @@
 const Shimmer = ()=>{
     return(
         <div className="shimmer_wrapper">
-            <div className="shimmer"> </div>
-            <div className="shimmer"> </div>
-            <div className="shimmer"> </div>
-            <div className="shimmer"> </div>
-            <div className="shimmer"> </div>
-            <div className="shimmer"> </div>
-            <div className="shimmer"> </div>
-            <div className="shimmer"> </div>
-            <div className="shimmer"> </div>
-            <div className="shimmer"> </div>
-            <div className="shimmer"> </div>
+        {
+            Array(10).fill("").map((e, ind) => 
+            <div className="shimmer" key={ind}> </div>)
+        }
         </div>
     )
 }
 
-export default Shimmer
+export default Shimmer;

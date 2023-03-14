@@ -27768,97 +27768,15 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Shimmer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "shimmer_wrapper",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: Array(10).fill("").map((e, ind)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "shimmer",
                 children: " "
-            }, void 0, false, {
+            }, ind, false, {
                 fileName: "src/components/Shimmer.js",
                 lineNumber: 3,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer",
-                children: " "
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 4,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer",
-                children: " "
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 5,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer",
-                children: " "
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 6,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer",
-                children: " "
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer",
-                children: " "
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer",
-                children: " "
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer",
-                children: " "
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 10,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer",
-                children: " "
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 11,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer",
-                children: " "
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 12,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer",
-                children: " "
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 13,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
+                columnNumber: 45
+            }, undefined))
+    }, void 0, false, {
         fileName: "src/components/Shimmer.js",
         lineNumber: 2,
         columnNumber: 10
