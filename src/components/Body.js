@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { SWIGGY_API } from "./confige";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import SearchIcon from '@mui/icons-material/Search';
 
 function filterData(searchText, allrestaurants) {
   const filterDatax = allrestaurants.filter((restaurant) =>
@@ -56,7 +57,7 @@ const Body = () => {
             setFilteredRestaurants(data);
           }}
         >
-          Search
+          <SearchIcon/>
         </button>
       </div>
       <div className="body_wrapper">

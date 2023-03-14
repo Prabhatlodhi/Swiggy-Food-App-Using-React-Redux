@@ -9,6 +9,7 @@ import About from "./components/NavComponent/About";
 import ContactUs from "./components/NavComponent/ContactUs";
 import ErrorPage from "./components/ErrorPage";
 import RestrauntDetails from "./components/RestrauntDetails";
+import ProfileClassComponent from "./components/ProfileClassComponent";
 
 const AppLayout = () => {
   return (
@@ -34,6 +35,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+        children: [{
+          path: "profileclasscomponent",
+          element: <ProfileClassComponent/>
+        }]
       },
       {
         path: "/contactus",
