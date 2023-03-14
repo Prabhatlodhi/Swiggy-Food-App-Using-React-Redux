@@ -4,15 +4,17 @@ import "../index.css";
 import HeaderComponent from "./components/HeaderComponent";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import About from "./components/NavComponent/About";
 import ContactUs from "./components/NavComponent/ContactUs";
+import ErrorPage from "./components/ErrorPage";
+import RestrauntDetails from "./components/RestrauntDetails";
 
 const AppLayout = () => {
   return (
     <>
       <HeaderComponent />
-      <Body />
+      <Outlet />
       <Footer />
     </>
   );
@@ -23,16 +25,26 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
-  },
-
-  {
-    path: "/about",
-    element: <About />,
-  },
-
-  {
-    path: "/contactus",
-    element: <ContactUs />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contactus",
+        element: <ContactUs />,
+      },
+      {
+        // path: "/restaurant/:id",
+        path: "/restaurant/:resid",
+        element: <RestrauntDetails />,
+      },
+    ],
   },
 ]);
 

@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+ 
+
 :root {
     --shadow-color: 0deg 0% 45%;
     
@@ -50,12 +52,7 @@ box-shadow: 4px 2px 9px 2px rgba(85,83,105,1);
   cursor: pointer;
   margin: 0px 30px;
 }
-
-.nav_item > li:hover{ 
-    color: rgb(40, 54, 148);
-    text-underline-offset: 9px;
-  text-decoration: underline;
-  }
+ 
 
 .name {
   color: red;
@@ -149,4 +146,58 @@ box-shadow: 4px 2px 9px 2px rgba(85,83,105,1);
   background-color: coral;
   color: aliceblue;
   padding: 1px 10px;
+}
+
+.errorWrapper{
+  background-color: black;
+  text-align: center;
+   
+}
+
+.errorWrapper img{
+    
+  height: 99vh;
+}
+
+.Link{
+  color: black;
+  text-decoration: none;
+}
+
+.LinkforCard{
+  color: black;
+  text-decoration: none;
+}
+
+.Link:hover{ 
+  color: rgb(40, 54, 148);
+  text-underline-offset: 9px;
+text-decoration: underline;
+}
+
+.restraruntDetails{
+  text-align: center; 
+}
+
+.resWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ 
+
+.individualItem{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 150px;
+  border: 1px solid grey;
+  margin: 15px auto;
+  padding: 0px 30px;
+   
+}
+
+.menuImage{
+  width: 100px;
 }
