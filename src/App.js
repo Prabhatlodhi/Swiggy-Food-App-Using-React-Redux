@@ -35,10 +35,12 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
-        children: [{
+        children: [
+          {
           path: "profileclasscomponent",
-          element: <ProfileClassComponent/>
-        }]
+          element: <ProfileClassComponent/>,
+        },
+      ],
       },
       {
         path: "/contactus",

@@ -56098,10 +56098,15 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$37f9.prelude(module);
 
 try {
+// import ProfileClassComponent from "../ProfileClassComponent";
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRouterDom = require("react-router-dom");
+var _profileClassComponent = require("../ProfileClassComponent");
+var _profileClassComponentDefault = parcelHelpers.interopDefault(_profileClassComponent);
+var _profileUsingFunction = require("../ProfileUsingFunction");
+var _profileUsingFunctionDefault = parcelHelpers.interopDefault(_profileUsingFunction);
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -56109,18 +56114,61 @@ const About = ()=>{
                 children: "Hello From About Us"
             }, void 0, false, {
                 fileName: "src/components/NavComponent/About.js",
-                lineNumber: 4,
-                columnNumber: 13
+                lineNumber: 7,
+                columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "/about",
+                children: [
+                    " ",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "ABOUT"
+                    }, void 0, false, {
+                        fileName: "src/components/NavComponent/About.js",
+                        lineNumber: 10,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/NavComponent/About.js",
-                lineNumber: 6,
-                columnNumber: 15
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "profileclasscomponent",
+                children: [
+                    " ",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "CLick"
+                    }, void 0, false, {
+                        fileName: "src/components/NavComponent/About.js",
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/NavComponent/About.js",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassComponentDefault.default), {
+                name: "4545"
+            }, void 0, false, {
+                fileName: "src/components/NavComponent/About.js",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileUsingFunctionDefault.default), {
+                name: "prabhat"
+            }, void 0, false, {
+                fileName: "src/components/NavComponent/About.js",
+                lineNumber: 17,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/NavComponent/About.js",
-        lineNumber: 3,
+        lineNumber: 6,
         columnNumber: 10
     }, undefined);
 };
@@ -56134,7 +56182,124 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gAnhB":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","../ProfileUsingFunction":"4Lc39","../ProfileClassComponent":"eRebM"}],"4Lc39":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$742a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$742a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const ProfileUsingFunction = ({ name  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "ProfileUsingFunction "
+            }, void 0, false, {
+                fileName: "src/components/ProfileUsingFunction.js",
+                lineNumber: 6,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    name,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ProfileUsingFunction.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/ProfileUsingFunction.js",
+        lineNumber: 5,
+        columnNumber: 10
+    }, undefined);
+};
+_c = ProfileUsingFunction;
+exports.default = ProfileUsingFunction;
+var _c;
+$RefreshReg$(_c, "ProfileUsingFunction");
+
+  $parcel$ReactRefreshHelpers$742a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eRebM":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3f23 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3f23.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class ProfileClassComponent extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            count: 0
+        };
+    }
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Hello from Profile Class Component"
+                }, void 0, false, {
+                    fileName: "src/components/ProfileClassComponent.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: this.props.name
+                }, void 0, false, {
+                    fileName: "src/components/ProfileClassComponent.js",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: this.state.count
+                }, void 0, false, {
+                    fileName: "src/components/ProfileClassComponent.js",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>this.setState({
+                            count: this.state.count + 1
+                        }),
+                    children: "rrrrrrrrrr"
+                }, void 0, false, {
+                    fileName: "src/components/ProfileClassComponent.js",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/ProfileClassComponent.js",
+            lineNumber: 10,
+            columnNumber: 12
+        }, this);
+    }
+}
+exports.default = ProfileClassComponent;
+
+  $parcel$ReactRefreshHelpers$3f23.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gAnhB":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bb51 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -56144,19 +56309,18 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
 const ContactUs = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
             children: "Hello From CONTACT Us"
         }, void 0, false, {
             fileName: "src/components/NavComponent/ContactUs.js",
-            lineNumber: 4,
+            lineNumber: 3,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/NavComponent/ContactUs.js",
-        lineNumber: 3,
+        lineNumber: 2,
         columnNumber: 10
     }, undefined);
 };
@@ -56170,7 +56334,7 @@ $RefreshReg$(_c, "ContactUs");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8FX8S":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8FX8S":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7345 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -56471,42 +56635,6 @@ $RefreshReg$(_c, "RestrauntDetails");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Shimmer":"g6ZGj","./confige":"o3N3h","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eRebM":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$3f23 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$3f23.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class ProfileClassComponent extends (0, _reactDefault.default).Component {
-    render() {
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Hello from Profile Class Component"
-            }, void 0, false, {
-                fileName: "src/components/ProfileClassComponent.js",
-                lineNumber: 5,
-                columnNumber: 9
-            }, this)
-        }, void 0, false, {
-            fileName: "src/components/ProfileClassComponent.js",
-            lineNumber: 4,
-            columnNumber: 12
-        }, this);
-    }
-}
-exports.default = ProfileClassComponent;
-
-  $parcel$ReactRefreshHelpers$3f23.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequirecce3")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Shimmer":"g6ZGj","./confige":"o3N3h","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequirecce3")
 
 //# sourceMappingURL=index.7271efb6.js.map

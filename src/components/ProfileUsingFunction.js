@@ -1,9 +1,10 @@
 import React from 'react'
 
-const ProfileUsingFunction = () => {
+const ProfileUsingFunction = ({name}) => {
   return (
     <div>
-      <h1>ProfileUsingFunction</h1>
+      <h1>ProfileUsingFunction </h1>
+      <p>{name} </p>
     </div>
   )
 }
