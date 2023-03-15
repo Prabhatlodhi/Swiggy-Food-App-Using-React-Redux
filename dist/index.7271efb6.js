@@ -56106,76 +56106,80 @@ var _profileClassComponent = require("../ProfileClassComponent");
 var _profileClassComponentDefault = parcelHelpers.interopDefault(_profileClassComponent);
 var _profileUsingFunction = require("../ProfileUsingFunction");
 var _profileUsingFunctionDefault = parcelHelpers.interopDefault(_profileUsingFunction);
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Hello From About Us"
-            }, void 0, false, {
-                fileName: "src/components/NavComponent/About.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "/about",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "ABOUT"
+var _react = require("react");
+class About extends (0, _react.Component) {
+    constructor(props){
+        super(props);
+    }
+    componentDidMount() {}
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Hello From About Us"
                 }, void 0, false, {
                     fileName: "src/components/NavComponent/About.js",
-                    lineNumber: 9,
+                    lineNumber: 12,
                     columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/NavComponent/About.js",
-                lineNumber: 7,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "profileclasscomponent",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "CLick"
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/about",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "ABOUT"
+                    }, void 0, false, {
+                        fileName: "src/components/NavComponent/About.js",
+                        lineNumber: 15,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
                     fileName: "src/components/NavComponent/About.js",
                     lineNumber: 13,
                     columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/NavComponent/About.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassComponentDefault.default), {
-                name: "4545"
-            }, void 0, false, {
-                fileName: "src/components/NavComponent/About.js",
-                lineNumber: 15,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileUsingFunctionDefault.default), {
-                name: "prabhat"
-            }, void 0, false, {
-                fileName: "src/components/NavComponent/About.js",
-                lineNumber: 16,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/NavComponent/About.js",
-        lineNumber: 5,
-        columnNumber: 10
-    }, undefined);
-};
-_c = About;
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "profileclasscomponent",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "CLick"
+                    }, void 0, false, {
+                        fileName: "src/components/NavComponent/About.js",
+                        lineNumber: 19,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/components/NavComponent/About.js",
+                    lineNumber: 17,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassComponentDefault.default), {
+                    name: "4545"
+                }, void 0, false, {
+                    fileName: "src/components/NavComponent/About.js",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileUsingFunctionDefault.default), {
+                    name: "prabhat"
+                }, void 0, false, {
+                    fileName: "src/components/NavComponent/About.js",
+                    lineNumber: 22,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/NavComponent/About.js",
+            lineNumber: 11,
+            columnNumber: 12
+        }, this);
+    }
+}
 exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
 
   $parcel$ReactRefreshHelpers$37f9.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../ProfileClassComponent":"eRebM","../ProfileUsingFunction":"4Lc39","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eRebM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../ProfileClassComponent":"eRebM","../ProfileUsingFunction":"4Lc39","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"eRebM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3f23 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
