@@ -29,7 +29,7 @@
   padding-right: 180px;
 }
 
-.nav_wrapper {
+.nav_wrapper { 
   display: flex;
   justify-content: space-between;
   align-items: center;
