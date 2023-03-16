@@ -1,7 +1,13 @@
 import { IMAGE_LINK_CDN } from "./confige"; 
 import StarRateIcon from '@mui/icons-material/StarRate';
+import { useContext } from "react";
+import UserContexte from "../Utils/LearningContext";
+
 
 const RestrauntCard = ({ name, cuisines, rating, cloudinaryImageId, costForTwoString, maxDeliveryTime, avgRating, user })=>{
+
+    const {usere} = useContext(UserContexte);
+
     return(
         <div className="card">
             <img src={IMAGE_LINK_CDN + cloudinaryImageId} alt="restraurantcard" className="restraurentImage" />
@@ -13,6 +19,7 @@ const RestrauntCard = ({ name, cuisines, rating, cloudinaryImageId, costForTwoSt
              <span>{costForTwoString}</span>
              </div>
              <p>{user.name}</p>
+             <p>{ usere.name }</p>
         </div>
     )
  }

@@ -27293,8 +27293,8 @@ var _learningContext = require("../Utils/LearningContext");
 var _learningContextDefault = parcelHelpers.interopDefault(_learningContext);
 var _s = $RefreshSig$();
 const Title = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-        href: "/",
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+        to: "/",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
             src: (0, _brightColorfulPlayfulFunnyDonutsFoodCircleLogoGifDefault.default),
             alt: "foodlogo",
@@ -27314,7 +27314,7 @@ _c = Title;
 const HeaderComponent = ()=>{
     _s();
     const [isloggedIn, setIsloggedIn] = (0, _react.useState)(true);
-    const { user  } = (0, _react.useContext)((0, _learningContextDefault.default));
+    const { usere  } = (0, _react.useContext)((0, _learningContextDefault.default));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "nav_wrapper ",
         children: [
@@ -27403,7 +27403,7 @@ const HeaderComponent = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: [
-                            user.name,
+                            usere.name,
                             isloggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 onClick: ()=>setIsloggedIn(!isloggedIn),
                                 className: "btnlog",
@@ -27443,7 +27443,7 @@ const HeaderComponent = ()=>{
         columnNumber: 10
     }, undefined);
 };
-_s(HeaderComponent, "nJZ6CFDs9AHxlvQu5Dgg6sR3QpY=");
+_s(HeaderComponent, "bvGqWL1cAPYOsN7ApYiOkvWJ/7c=");
 _c1 = HeaderComponent;
 exports.default = HeaderComponent;
 var _c, _c1;
@@ -27455,7 +27455,7 @@ $RefreshReg$(_c1, "HeaderComponent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../ImagesGif/Bright Colorful Playful Funny Donuts Food Circle Logo.gif":"bVqLm","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Utils/LearningContext":"7ZBeL"}],"bVqLm":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../ImagesGif/Bright Colorful Playful Funny Donuts Food Circle Logo.gif":"bVqLm","react-router-dom":"9xmpe","../Utils/LearningContext":"7ZBeL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bVqLm":[function(require,module,exports) {
 module.exports = require("f2bed323c1204065").getBundleURL("aXMci") + "Bright Colorful Playful Funny Donuts Food Circle Logo.0b0e2b80.gif" + "?" + Date.now();
 
 },{"f2bed323c1204065":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -32667,7 +32667,30 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"km3Ru":[function(require,module,exports) {
+},{}],"7ZBeL":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9dc1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9dc1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+const UserContexte = /*#__PURE__*/ (0, _react.createContext)({
+    usere: {
+        name: "Dummy Name",
+        email: "@gmail.com"
+    }
+});
+exports.default = UserContexte;
+
+  $parcel$ReactRefreshHelpers$9dc1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("18530517b2165f77");
 function debounce(func, delay) {
@@ -32800,30 +32823,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"18530517b2165f77":"786KC"}],"7ZBeL":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9dc1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9dc1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-const UserContexte = /*#__PURE__*/ (0, _react.createContext)({
-    user: {
-        name: "Dummy Name",
-        email: "@gmail.com"
-    }
-});
-exports.default = UserContexte;
-
-  $parcel$ReactRefreshHelpers$9dc1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
+},{"18530517b2165f77":"786KC"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32976,7 +32976,13 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _confige = require("./confige");
 var _starRate = require("@mui/icons-material/StarRate");
 var _starRateDefault = parcelHelpers.interopDefault(_starRate);
+var _react = require("react");
+var _learningContext = require("../Utils/LearningContext");
+var _learningContextDefault = parcelHelpers.interopDefault(_learningContext);
+var _s = $RefreshSig$();
 const RestrauntCard = ({ name , cuisines , rating , cloudinaryImageId , costForTwoString , maxDeliveryTime , avgRating , user  })=>{
+    _s();
+    const { usere  } = (0, _react.useContext)((0, _learningContextDefault.default));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [
@@ -32986,7 +32992,7 @@ const RestrauntCard = ({ name , cuisines , rating , cloudinaryImageId , costForT
                 className: "restraurentImage"
             }, void 0, false, {
                 fileName: "src/components/RestrurantCard.js",
-                lineNumber: 14,
+                lineNumber: 19,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -32995,12 +33001,12 @@ const RestrauntCard = ({ name , cuisines , rating , cloudinaryImageId , costForT
                     children: name
                 }, void 0, false, {
                     fileName: "src/components/RestrurantCard.js",
-                    lineNumber: 15,
+                    lineNumber: 20,
                     columnNumber: 37
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/RestrurantCard.js",
-                lineNumber: 15,
+                lineNumber: 20,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -33011,7 +33017,7 @@ const RestrauntCard = ({ name , cuisines , rating , cloudinaryImageId , costForT
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestrurantCard.js",
-                lineNumber: 16,
+                lineNumber: 21,
                 columnNumber: 14
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33025,7 +33031,7 @@ const RestrauntCard = ({ name , cuisines , rating , cloudinaryImageId , costForT
                                 fontSize: "very-small"
                             }, void 0, false, {
                                 fileName: "src/components/RestrurantCard.js",
-                                lineNumber: 18,
+                                lineNumber: 23,
                                 columnNumber: 43
                             }, undefined),
                             " ",
@@ -33033,7 +33039,7 @@ const RestrauntCard = ({ name , cuisines , rating , cloudinaryImageId , costForT
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestrurantCard.js",
-                        lineNumber: 18,
+                        lineNumber: 23,
                         columnNumber: 14
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -33043,36 +33049,44 @@ const RestrauntCard = ({ name , cuisines , rating , cloudinaryImageId , costForT
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestrurantCard.js",
-                        lineNumber: 19,
+                        lineNumber: 24,
                         columnNumber: 14
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: costForTwoString
                     }, void 0, false, {
                         fileName: "src/components/RestrurantCard.js",
-                        lineNumber: 20,
+                        lineNumber: 25,
                         columnNumber: 14
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestrurantCard.js",
-                lineNumber: 17,
+                lineNumber: 22,
                 columnNumber: 14
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: user.name
             }, void 0, false, {
                 fileName: "src/components/RestrurantCard.js",
-                lineNumber: 22,
+                lineNumber: 27,
+                columnNumber: 14
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: usere.name
+            }, void 0, false, {
+                fileName: "src/components/RestrurantCard.js",
+                lineNumber: 28,
                 columnNumber: 14
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestrurantCard.js",
-        lineNumber: 13,
+        lineNumber: 18,
         columnNumber: 10
     }, undefined);
 };
+_s(RestrauntCard, "JWytF0QK/Wt3m8mZKqV9c1XrUTA=");
 _c = RestrauntCard;
 exports.default = RestrauntCard;
 var _c;
@@ -33083,7 +33097,7 @@ $RefreshReg$(_c, "RestrauntCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./confige":"o3N3h","@mui/icons-material/StarRate":"bqnGN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"o3N3h":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./confige":"o3N3h","@mui/icons-material/StarRate":"bqnGN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../Utils/LearningContext":"7ZBeL"}],"o3N3h":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IMAGE_LINK_CDN", ()=>IMAGE_LINK_CDN);

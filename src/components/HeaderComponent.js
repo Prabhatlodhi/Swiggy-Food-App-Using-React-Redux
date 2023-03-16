@@ -3,19 +3,18 @@ import image from "../../ImagesGif/Bright Colorful Playful Funny Donuts Food Cir
 import { Link } from "react-router-dom";
 import UserContexte from "../Utils/LearningContext";
 
-
 const Title = () => {
   return (
-    <a href="/">
+    <Link to="/">
       <img src={image} alt="foodlogo" className="imageclass" />
-    </a>
+    </Link>
   );
 };
 
 const HeaderComponent = () => {
   const [isloggedIn, setIsloggedIn] = useState(true);
 
-  const {user} = useContext(UserContexte);
+  const { usere } = useContext(UserContexte);
 
   return (
     <div className="nav_wrapper  ">
@@ -38,10 +37,9 @@ const HeaderComponent = () => {
         </Link>
 
         <li>
-        {user.name }
+          {usere.name}
 
           {isloggedIn ? (
-
             <button
               onClick={() => setIsloggedIn(!isloggedIn)}
               className="btnlog"
