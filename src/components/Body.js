@@ -4,14 +4,9 @@ import { SWIGGY_API } from "./confige";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import SearchIcon from '@mui/icons-material/Search';
+import { filterData} from "../Utils/Helper";
+import useOnline from "../Utils/useOnline";
 
-function filterData(searchText, allrestaurants) {
-  const filterDatax = allrestaurants.filter((restaurant) =>
-    restaurant?.data?.name?.toLowerCase()?.includes(searchText?.toLowerCase())
-  );
-
-  return filterDatax;
-}
 
 const Body = () => {
   const [allrestaurants, setAllRestaurants] = useState([]);
@@ -29,6 +24,13 @@ const Body = () => {
     setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
+
+  const isOnline = useOnline();
+
+if(!isOnline){
+  return <h1>OFFLINE</h1>
+}
+
 
   //below we have early return
   //no restraureant no CanvasRenderingContext2D
