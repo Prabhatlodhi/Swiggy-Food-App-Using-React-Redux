@@ -12,6 +12,7 @@ import RestrauntDetails from "./components/RestrauntDetails";
 import ProfileClassComponent from "./components/ProfileClassComponent";
 import { lazy,Suspense } from "react";
 import Shimmer from "./components/Shimmer";
+import { useState } from "react";
 
 
 const Instamart = lazy(()=> import("./components/Instamart") );
@@ -19,7 +20,7 @@ const About = lazy(()=> import("./components/NavComponent/About") );
 
 const AppLayout = () => {
 
-  
+
 const [ user, setUser] = useState({
   name: "Prabhat",
   email: "@gmail.com",
@@ -45,7 +46,7 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body />,
+        element: <Body user={user}  />,
       },
       {
         path: "/about",

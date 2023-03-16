@@ -2956,7 +2956,7 @@ const About = /*#__PURE__*/ (0, _react.lazy)(()=>require("b7a168bf8e4589fd"));
 _c1 = About;
 const AppLayout = ()=>{
     _s();
-    const [user, setUser] = useState({
+    const [user, setUser] = (0, _react.useState)({
         name: "Prabhat",
         email: "@gmail.com"
     });
@@ -2964,17 +2964,17 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerComponentDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 23,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 24,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined)
         ]
@@ -2988,12 +2988,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 32,
+            lineNumber: 33,
             columnNumber: 12
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorPageDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 33,
+            lineNumber: 34,
             columnNumber: 17
         }, undefined),
         children: [
@@ -3001,7 +3001,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 36,
+                    lineNumber: 37,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3013,12 +3013,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(About, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 39,
+                        lineNumber: 40,
                         columnNumber: 61
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 14
                 }, undefined),
                 children: [
@@ -3026,7 +3026,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "profileclasscomponent",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassComponentDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
-                            lineNumber: 42,
+                            lineNumber: 43,
                             columnNumber: 16
                         }, undefined)
                     }
@@ -3036,7 +3036,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contactus",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 46,
+                    lineNumber: 47,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3045,7 +3045,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurant/:resid",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrauntDetailsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 50,
+                    lineNumber: 51,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3057,13 +3057,13 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                         " ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Instamart, {}, void 0, false, {
                             fileName: "src/App.js",
-                            lineNumber: 53,
+                            lineNumber: 54,
                             columnNumber: 48
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/App.js",
-                    lineNumber: 53,
+                    lineNumber: 54,
                     columnNumber: 14
                 }, undefined)
             }
@@ -3075,7 +3075,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 57,
+    lineNumber: 58,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2;
@@ -3088,7 +3088,7 @@ $RefreshReg$(_c2, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","../index.css":"giGSC","./components/HeaderComponent":"hvUPh","./components/Body":"8yaV8","./components/Footer":"8pPOA","react-router-dom":"9xmpe","./components/NavComponent/ContactUs":"gAnhB","./components/ErrorPage":"8FX8S","./components/RestrauntDetails":"kNNse","./components/ProfileClassComponent":"eRebM","./components/Shimmer":"g6ZGj","30b3a0ed30cc9c57":"3IbrY","b7a168bf8e4589fd":"9pdeU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","../index.css":"giGSC","./components/HeaderComponent":"hvUPh","./components/Body":"8yaV8","./components/Footer":"8pPOA","react-router-dom":"9xmpe","./components/NavComponent/ContactUs":"gAnhB","./components/ErrorPage":"8FX8S","./components/RestrauntDetails":"kNNse","./components/ProfileClassComponent":"eRebM","./components/Shimmer":"g6ZGj","30b3a0ed30cc9c57":"3IbrY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","b7a168bf8e4589fd":"9pdeU"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ef16f282d136ed88");
 
