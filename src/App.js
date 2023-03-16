@@ -21,10 +21,7 @@ const About = lazy(()=> import("./components/NavComponent/About") );
 const AppLayout = () => {
 
 
-const [ user, setUser] = useState({
-  name: "Prabhat",
-  email: "@gmail.com",
-})
+const [ user, setUser] = useState()
 
 
 
@@ -46,7 +43,10 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body user={user}  />,
+        element: <Body user={{
+          name: "Prabhat",
+          email: "@gmail.com",
+        }}  />,
       },
       {
         path: "/about",

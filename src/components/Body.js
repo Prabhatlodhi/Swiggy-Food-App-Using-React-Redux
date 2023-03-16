@@ -7,7 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { filterData } from "../Utils/Helper";
 import useOnline from "../Utils/useOnline";
 
-const Body = () => {
+const Body = ({user}) => {
   const [allrestaurants, setAllRestaurants] = useState([]);
   const [filteredrestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
@@ -71,7 +71,7 @@ const Body = () => {
                 key={restaurant.data.id}
                 className="LinkforCard"
               >
-                <RestrauntCard {...restaurant.data} />
+                <RestrauntCard {...restaurant.data} user={user} />
               </Link>
             );
           })

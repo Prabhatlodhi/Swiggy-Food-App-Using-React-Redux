@@ -1,7 +1,7 @@
 import { IMAGE_LINK_CDN } from "./confige"; 
 import StarRateIcon from '@mui/icons-material/StarRate';
 
-const RestrauntCard = ({ name, cuisines, rating, cloudinaryImageId, costForTwoString, maxDeliveryTime, avgRating })=>{
+const RestrauntCard = ({ name, cuisines, rating, cloudinaryImageId, costForTwoString, maxDeliveryTime, avgRating, user })=>{
     return(
         <div className="card">
             <img src={IMAGE_LINK_CDN + cloudinaryImageId} alt="restraurantcard" className="restraurentImage" />
@@ -12,6 +12,7 @@ const RestrauntCard = ({ name, cuisines, rating, cloudinaryImageId, costForTwoSt
              <span>{maxDeliveryTime} mins</span>
              <span>{costForTwoString}</span>
              </div>
+             <p>{user.name}</p>
         </div>
     )
  }

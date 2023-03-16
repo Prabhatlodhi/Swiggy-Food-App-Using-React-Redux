@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import image from "../../ImagesGif/Bright Colorful Playful Funny Donuts Food Circle Logo.gif";
 import { Link } from "react-router-dom";
+import UserContexte from "../Utils/LearningContext";
+
 
 const Title = () => {
   return (
@@ -12,6 +14,8 @@ const Title = () => {
 
 const HeaderComponent = () => {
   const [isloggedIn, setIsloggedIn] = useState(true);
+
+  const {user} = useContext(UserContexte);
 
   return (
     <div className="nav_wrapper  ">
@@ -34,7 +38,10 @@ const HeaderComponent = () => {
         </Link>
 
         <li>
+        {user.name }
+
           {isloggedIn ? (
+
             <button
               onClick={() => setIsloggedIn(!isloggedIn)}
               className="btnlog"
