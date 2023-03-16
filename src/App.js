@@ -5,13 +5,28 @@ import HeaderComponent from "./components/HeaderComponent";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import About from "./components/NavComponent/About";
+// import About from "./components/NavComponent/About";
 import ContactUs from "./components/NavComponent/ContactUs";
 import ErrorPage from "./components/ErrorPage";
 import RestrauntDetails from "./components/RestrauntDetails";
 import ProfileClassComponent from "./components/ProfileClassComponent";
+import { lazy,Suspense } from "react";
+import Shimmer from "./components/Shimmer";
+
+
+const Instamart = lazy(()=> import("./components/Instamart") );
+const About = lazy(()=> import("./components/NavComponent/About") );
 
 const AppLayout = () => {
+
+  
+const [ user, setUser] = useState({
+  name: "Prabhat",
+  email: "@gmail.com",
+})
+
+
+
   return (
     <>
       <HeaderComponent />
@@ -34,7 +49,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: <Suspense fallback={<h1>Loading about us</h1> } ><About /></Suspense> ,
         children: [
           {
           path: "profileclasscomponent",
@@ -50,6 +65,10 @@ const appRouter = createBrowserRouter([
         // path: "/restaurant/:id",
         path: "/restaurant/:resid",
         element: <RestrauntDetails />,
+      },
+      { 
+        path: "/instamart",
+        element: <Suspense fallback={<Shimmer/>} > <Instamart /></Suspense>,
       },
     ],
   },

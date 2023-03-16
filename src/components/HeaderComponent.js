@@ -29,6 +29,9 @@ const HeaderComponent = () => {
         <Link to="/" className="Link">
           <li>Cart</li>
         </Link>
+        <Link to="/instamart" className="Link">
+          <li>Instamart</li>
+        </Link>
 
         <li>
           {isloggedIn ? (

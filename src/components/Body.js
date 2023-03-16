@@ -3,10 +3,9 @@ import { useEffect, useState } from "react";
 import { SWIGGY_API } from "./confige";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
-import SearchIcon from '@mui/icons-material/Search';
-import { filterData} from "../Utils/Helper";
+import SearchIcon from "@mui/icons-material/Search";
+import { filterData } from "../Utils/Helper";
 import useOnline from "../Utils/useOnline";
-
 
 const Body = () => {
   const [allrestaurants, setAllRestaurants] = useState([]);
@@ -27,10 +26,9 @@ const Body = () => {
 
   const isOnline = useOnline();
 
-if(!isOnline){
-  return <h1>OFFLINE</h1>
-}
-
+  if (!isOnline) {
+    return <h1>OFFLINE</h1>;
+  }
 
   //below we have early return
   //no restraureant no CanvasRenderingContext2D
@@ -59,7 +57,7 @@ if(!isOnline){
             setFilteredRestaurants(data);
           }}
         >
-          <SearchIcon/>
+          <SearchIcon />
         </button>
       </div>
       <div className="body_wrapper">
@@ -67,7 +65,15 @@ if(!isOnline){
           <h1>No rest FOUND</h1>
         ) : (
           filteredrestaurants?.map((restaurant) => {
-            return <Link to={"/restaurant/" + restaurant.data.id} key={restaurant.data.id} className="LinkforCard" ><RestrauntCard {...restaurant.data}  /></Link>
+            return (
+              <Link
+                to={"/restaurant/" + restaurant.data.id}
+                key={restaurant.data.id}
+                className="LinkforCard"
+              >
+                <RestrauntCard {...restaurant.data} />
+              </Link>
+            );
           })
         )}
       </div>
