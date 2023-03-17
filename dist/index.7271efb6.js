@@ -57697,7 +57697,7 @@ const RestrauntDetails = ()=>{
     let restData = specificRestraurant?.cards[0]?.card?.card?.info;
     if (!specificRestraurant) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/RestrauntDetails.js",
-        lineNumber: 30,
+        lineNumber: 28,
         columnNumber: 12
     }, undefined);
     let ITEMS = specificRestraurant.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards;
@@ -57716,12 +57716,12 @@ const RestrauntDetails = ()=>{
                             className: "restraImage"
                         }, void 0, false, {
                             fileName: "src/components/RestrauntDetails.js",
-                            lineNumber: 37,
+                            lineNumber: 35,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/RestrauntDetails.js",
-                        lineNumber: 36,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -57738,7 +57738,7 @@ const RestrauntDetails = ()=>{
                                                         children: restData.name
                                                     }, void 0, false, {
                                                         fileName: "src/components/RestrauntDetails.js",
-                                                        lineNumber: 43,
+                                                        lineNumber: 41,
                                                         columnNumber: 17
                                                     }, undefined),
                                                     " ,",
@@ -57746,20 +57746,20 @@ const RestrauntDetails = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/RestrauntDetails.js",
-                                                lineNumber: 42,
+                                                lineNumber: 40,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                 children: restData.city
                                             }, void 0, false, {
                                                 fileName: "src/components/RestrauntDetails.js",
-                                                lineNumber: 45,
+                                                lineNumber: 43,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/RestrauntDetails.js",
-                                        lineNumber: 41,
+                                        lineNumber: 39,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -57769,38 +57769,38 @@ const RestrauntDetails = ()=>{
                                                 children: restData.avgRatingString
                                             }, void 0, false, {
                                                 fileName: "src/components/RestrauntDetails.js",
-                                                lineNumber: 48,
+                                                lineNumber: 46,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                                                 fileName: "src/components/RestrauntDetails.js",
-                                                lineNumber: 49,
+                                                lineNumber: 47,
                                                 columnNumber: 15
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
                                                 children: restData.totalRatingsString
                                             }, void 0, false, {
                                                 fileName: "src/components/RestrauntDetails.js",
-                                                lineNumber: 50,
+                                                lineNumber: 48,
                                                 columnNumber: 15
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/RestrauntDetails.js",
-                                        lineNumber: 47,
+                                        lineNumber: 45,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 40,
+                                lineNumber: 38,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
                                 children: restData?.cuisines?.join(", ")
                             }, void 0, false, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 53,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -57810,19 +57810,19 @@ const RestrauntDetails = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 54,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestrauntDetails.js",
-                        lineNumber: 39,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestrauntDetails.js",
-                lineNumber: 35,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -57832,7 +57832,7 @@ const RestrauntDetails = ()=>{
                         children: "Menu"
                     }, void 0, false, {
                         fileName: "src/components/RestrauntDetails.js",
-                        lineNumber: 59,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -57848,12 +57848,12 @@ const RestrauntDetails = ()=>{
                                                         children: item.card.info.name
                                                     }, void 0, false, {
                                                         fileName: "src/components/RestrauntDetails.js",
-                                                        lineNumber: 65,
+                                                        lineNumber: 63,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/components/RestrauntDetails.js",
-                                                    lineNumber: 64,
+                                                    lineNumber: 62,
                                                     columnNumber: 19
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -57863,7 +57863,7 @@ const RestrauntDetails = ()=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/RestrauntDetails.js",
-                                                    lineNumber: 67,
+                                                    lineNumber: 65,
                                                     columnNumber: 19
                                                 }, undefined),
                                                 OFFERS?.map((offers)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -57873,7 +57873,7 @@ const RestrauntDetails = ()=>{
                                                                 children: offers.subTitle
                                                             }, void 0, false, {
                                                                 fileName: "src/components/RestrauntDetails.js",
-                                                                lineNumber: 69,
+                                                                lineNumber: 67,
                                                                 columnNumber: 23
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -57881,7 +57881,7 @@ const RestrauntDetails = ()=>{
                                                                 children: offers.header
                                                             }, void 0, false, {
                                                                 fileName: "src/components/RestrauntDetails.js",
-                                                                lineNumber: 70,
+                                                                lineNumber: 68,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         ]
@@ -57891,13 +57891,13 @@ const RestrauntDetails = ()=>{
                                                     children: item.card.info.description
                                                 }, void 0, false, {
                                                     fileName: "src/components/RestrauntDetails.js",
-                                                    lineNumber: 73,
+                                                    lineNumber: 71,
                                                     columnNumber: 19
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/RestrauntDetails.js",
-                                            lineNumber: 63,
+                                            lineNumber: 61,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -57908,7 +57908,7 @@ const RestrauntDetails = ()=>{
                                                     className: "menuImage"
                                                 }, void 0, false, {
                                                     fileName: "src/components/RestrauntDetails.js",
-                                                    lineNumber: 78,
+                                                    lineNumber: 76,
                                                     columnNumber: 19
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -57916,41 +57916,41 @@ const RestrauntDetails = ()=>{
                                                     children: "Add Item"
                                                 }, void 0, false, {
                                                     fileName: "src/components/RestrauntDetails.js",
-                                                    lineNumber: 79,
+                                                    lineNumber: 77,
                                                     columnNumber: 19
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/RestrauntDetails.js",
-                                            lineNumber: 77,
+                                            lineNumber: 75,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/RestrauntDetails.js",
-                                    lineNumber: 62,
+                                    lineNumber: 60,
                                     columnNumber: 15
                                 }, undefined)
                             }, item.card.info.id, false, {
                                 fileName: "src/components/RestrauntDetails.js",
-                                lineNumber: 61,
+                                lineNumber: 59,
                                 columnNumber: 31
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/components/RestrauntDetails.js",
-                        lineNumber: 60,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestrauntDetails.js",
-                lineNumber: 58,
+                lineNumber: 56,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestrauntDetails.js",
-        lineNumber: 34,
+        lineNumber: 32,
         columnNumber: 10
     }, undefined);
 };

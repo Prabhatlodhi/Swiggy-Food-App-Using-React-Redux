@@ -14,7 +14,7 @@ const RestrauntDetails = () => {
   const dispatch = useDispatch();
 
   const handleAddItem = () => {
-    dispatch(additem("huhu"))
+    dispatch(additem("huhu"));
   };
 
   let restData = specificRestraurant?.cards[0]?.card?.card?.info;
@@ -23,9 +23,7 @@ const RestrauntDetails = () => {
     // console.log(specificRestraurant);
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards[0].card.info.name
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[3].card.card.itemCards[0].card.info.category
-
     // cards[0].card.card.info.sla.slaString
-
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards
     //groupedCard.cardGroupMap.REGULAR.cards[2]
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[3].card.card.itemCards[1].card.info.offerTags[0].subTitle
@@ -34,15 +32,14 @@ const RestrauntDetails = () => {
   if (!specificRestraurant) {
     return <Shimmer />;
   }
- 
 
   let ITEMS =
     specificRestraurant.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card
-      .card.itemCards; 
+      .card.itemCards;
   let OFFERS =
     specificRestraurant.cards[2].groupedCard.cardGroupMap.REGULAR.cards[3].card
       .card.itemCards[1].card.info.offerTags;
- 
+
   return (
     <div className="restraruntDetails">
       <div className="resWrapper">
