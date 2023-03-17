@@ -14,6 +14,10 @@ import { lazy, Suspense } from "react";
 import Shimmer from "./components/Shimmer";
 import { useState } from "react";
 import UserContexte from "./Utils/LearningContext";
+import { Provider } from "react-redux";
+import store from "./Redux/store";
+
+
 
 const Instamart = lazy(() => import("./components/Instamart"));
 const About = lazy(() => import("./components/NavComponent/About"));
@@ -26,13 +30,15 @@ const AppLayout = () => {
 
   return (
     
-      <UserContexte.Provider value={{
+     <Provider store={store}  >
+       <UserContexte.Provider value={{
         user: user,
       }}>
         <HeaderComponent />
         <Outlet />
         <Footer />
       </UserContexte.Provider>
+     </Provider>
     
   );
 };

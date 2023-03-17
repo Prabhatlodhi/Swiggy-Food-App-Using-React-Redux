@@ -210,8 +210,9 @@
 }
 
 .menudescription {
+  color: gray;
   padding-top: 15px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .swiggycat {

@@ -37,7 +37,7 @@ const HeaderComponent = () => {
         </Link>
 
         <li>
-          {user.name}
+          
 
           {isloggedIn ? (
             <button
