@@ -1,18 +1,26 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import { IMAGE_LINK_CDN } from "./confige";
 import useCustomHook from "../Utils/useCustomHook";
+import { additem } from "../Redux/CartSlice";
+import { useDispatch } from "react-redux";
 
 const RestrauntDetails = () => {
   const { resid } = useParams();
 
   const specificRestraurant = useCustomHook(Number(resid));
 
+  const dispatch = useDispatch();
+
+  const handleAddItem = () => {
+    dispatch(additem("huhu"))
+  };
+
   let restData = specificRestraurant?.cards[0]?.card?.card?.info;
 
   {
-    console.log(specificRestraurant);
+    // console.log(specificRestraurant);
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards[0].card.info.name
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[3].card.card.itemCards[0].card.info.category
 
@@ -26,19 +34,15 @@ const RestrauntDetails = () => {
   if (!specificRestraurant) {
     return <Shimmer />;
   }
-
-  //cards[0].card.card.info.name
+ 
 
   let ITEMS =
     specificRestraurant.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card
-      .card.itemCards;
-  //cards[2].groupedCard.cardGroupMap.REGULAR.cards[3].card.card.itemCards[1].card.info.offerTags[0].subTitle
+      .card.itemCards; 
   let OFFERS =
     specificRestraurant.cards[2].groupedCard.cardGroupMap.REGULAR.cards[3].card
       .card.itemCards[1].card.info.offerTags;
-
-  //cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards[2].card.info.offerTags[0].subTitle
-  // console.log(dd)
+ 
   return (
     <div className="restraruntDetails">
       <div className="resWrapper">
@@ -52,7 +56,9 @@ const RestrauntDetails = () => {
         <div className="restradetails">
           <div className="wrapperdetails">
             <div>
-              <span><b>{restData.name}</b> , </span>
+              <span>
+                <b>{restData.name}</b> ,{" "}
+              </span>
               <span>{restData.city}</span>
             </div>
             <div className="ratingdetails">
@@ -97,6 +103,7 @@ const RestrauntDetails = () => {
                     alt=""
                     className="menuImage"
                   />
+                  <button onClick={() => handleAddItem()}>Add Item</button>
                 </div>
               </div>
             </li>

@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import image from "../../ImagesGif/Bright Colorful Playful Funny Donuts Food Circle Logo.gif";
 import { Link } from "react-router-dom";
 import UserContexte from "../Utils/LearningContext";
+import { useSelector } from "react-redux";
 
 const Title = () => {
   return (
@@ -15,6 +16,8 @@ const HeaderComponent = () => {
   const [isloggedIn, setIsloggedIn] = useState(true);
 
   const { user } = useContext(UserContexte);
+
+  const cartItems = useSelector(store => store.cart.items);
 
   return (
     <div className="nav_wrapper  ">
@@ -30,15 +33,13 @@ const HeaderComponent = () => {
           <li>Contact</li>
         </Link>
         <Link to="/" className="Link">
-          <li>Cart</li>
+          <li>Cart - { cartItems.length }</li>
         </Link>
         <Link to="/instamart" className="Link">
           <li>Instamart</li>
         </Link>
 
         <li>
-          
-
           {isloggedIn ? (
             <button
               onClick={() => setIsloggedIn(!isloggedIn)}
