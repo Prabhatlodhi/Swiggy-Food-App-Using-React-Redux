@@ -10,27 +10,30 @@ import ContactUs from "./components/NavComponent/ContactUs";
 import ErrorPage from "./components/ErrorPage";
 import RestrauntDetails from "./components/RestrauntDetails";
 import ProfileClassComponent from "./components/ProfileClassComponent";
-import { lazy,Suspense } from "react";
+import { lazy, Suspense } from "react";
 import Shimmer from "./components/Shimmer";
 import { useState } from "react";
+import UserContexte from "./Utils/LearningContext";
 
-
-const Instamart = lazy(()=> import("./components/Instamart") );
-const About = lazy(()=> import("./components/NavComponent/About") );
+const Instamart = lazy(() => import("./components/Instamart"));
+const About = lazy(() => import("./components/NavComponent/About"));
 
 const AppLayout = () => {
-
-
-const [ user, setUser] = useState()
-
-
+  const [user, setUser] = useState({
+    name: "Prabhat",
+    email: "@gmail.com",
+  });
 
   return (
-    <>
-      <HeaderComponent />
-      <Outlet />
-      <Footer />
-    </>
+    
+      <UserContexte.Provider value={{
+        user: user,
+      }}>
+        <HeaderComponent />
+        <Outlet />
+        <Footer />
+      </UserContexte.Provider>
+    
   );
 };
 
@@ -43,20 +46,28 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body user={{
-          name: "Prabhat",
-          email: "@gmail.com",
-        }}  />,
+        element: (
+          <Body
+            user={{
+              name: "Prabhat",
+              email: "@gmail.com",
+            }}
+          />
+        ),
       },
       {
         path: "/about",
-        element: <Suspense fallback={<h1>Loading about us</h1> } ><About /></Suspense> ,
+        element: (
+          <Suspense fallback={<h1>Loading about us</h1>}>
+            <About />
+          </Suspense>
+        ),
         children: [
           {
-          path: "profileclasscomponent",
-          element: <ProfileClassComponent/>,
-        },
-      ],
+            path: "profileclasscomponent",
+            element: <ProfileClassComponent />,
+          },
+        ],
       },
       {
         path: "/contactus",
@@ -67,9 +78,14 @@ const appRouter = createBrowserRouter([
         path: "/restaurant/:resid",
         element: <RestrauntDetails />,
       },
-      { 
+      {
         path: "/instamart",
-        element: <Suspense fallback={<Shimmer/>} > <Instamart /></Suspense>,
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            {" "}
+            <Instamart />
+          </Suspense>
+        ),
       },
     ],
   },

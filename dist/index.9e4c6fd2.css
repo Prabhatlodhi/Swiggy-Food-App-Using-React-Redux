@@ -157,8 +157,11 @@
 }
 
 .resWrapper {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 50%, #fff 100%);
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
   display: flex;
 }
 
@@ -168,7 +171,7 @@
   border-bottom: 1px solid gray;
   justify-content: space-between;
   align-items: center;
-  margin: 15px auto;
+  margin: 22px auto;
   padding: 0 30px;
   display: flex;
 }
@@ -178,8 +181,15 @@
   box-shadow: 3px 3px 7px 7px #a4a4a44d;
 }
 
+.restradetails {
+  text-align: left;
+  padding-left: 50px;
+}
+
 .menuImage {
   width: 190px;
+  border-radius: 10px;
+  padding-left: 20px;
 }
 
 .menudes {
@@ -188,6 +198,35 @@
 
 .nameee {
   color: brown;
+}
+
+.swiggyoffers {
+  color: red;
+  font-size: 12px;
+}
+
+.restraImage {
+  border-radius: 10px;
+}
+
+.menudescription {
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.swiggycat {
+  font-size: 14px;
+}
+
+.wrapperdetails {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.ratingdetails {
+  text-align: center;
+  padding: 4px 4px 4px 20px;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

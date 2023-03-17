@@ -19,7 +19,9 @@ const RestrauntCard = ({ name, cuisines, rating, cloudinaryImageId, costForTwoSt
              <span>{costForTwoString}</span>
              </div>
              <p>{user.name}</p>
-             <p>{ usere.name }</p>
+             {/* /*below one from usecontext*/ }
+             <p>{ user.name }</p>
+
         </div>
     )
  }

@@ -14,7 +14,7 @@ const Title = () => {
 const HeaderComponent = () => {
   const [isloggedIn, setIsloggedIn] = useState(true);
 
-  const { usere } = useContext(UserContexte);
+  const { user } = useContext(UserContexte);
 
   return (
     <div className="nav_wrapper  ">
@@ -37,7 +37,7 @@ const HeaderComponent = () => {
         </Link>
 
         <li>
-          {usere.name}
+          {user.name}
 
           {isloggedIn ? (
             <button
