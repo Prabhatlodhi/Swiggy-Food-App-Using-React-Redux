@@ -16,6 +16,7 @@ import { useState } from "react";
 import UserContexte from "./Utils/LearningContext";
 import { Provider } from "react-redux";
 import store from "./Redux/store";
+import CartPage from "./components/CartPage";
 
 
 
@@ -83,6 +84,11 @@ const appRouter = createBrowserRouter([
         // path: "/restaurant/:id",
         path: "/restaurant/:resid",
         element: <RestrauntDetails />,
+      },
+      {
+         
+        path: "/cartpage",
+        element: <CartPage />,
       },
       {
         path: "/instamart",

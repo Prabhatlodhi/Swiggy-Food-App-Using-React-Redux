@@ -181,18 +181,20 @@
   margin-bottom: 40px;
 }
 
+ 
 
 
 .individualItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 890px;
-  height: 150px;
+  width: 900px;
+  height: 160px;
   border-bottom: 1px solid grey;
   margin: 22px auto;
   padding: 0px 30px;
 }
+ 
 
 .individualItem:hover {
   transition: box-shadow 200ms ease-out 50ms;
@@ -208,11 +210,12 @@
 .menuImage {
   width: 190px;
   border-radius: 10px;
-  padding-left: 20px;
+  /* padding-left: 20px;   */
 }
 
 .menudes{
   text-align: left;
+  padding-right: 50px;
 }
 
 .nameee{
@@ -250,4 +253,69 @@
   text-align: center; 
   padding: 4px; 
   padding-left: 20px;
+}
+
+.checkoutitem{
+   text-align: center;
+}
+
+.cardofCheckout{
+  width: 800px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin: 20px auto;
+}
+
+.restraurentImageofCheck{
+  width: 220px;
+}
+
+.listWrapper{
+  list-style: none;
+}
+
+.listWrapper button{
+  position: relative;
+  bottom: 20px;
+  padding: 5px;
+  
+}
+
+.css-button-sliding-to-left--sand {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #adb5bd;
+  color: #adb5bd;
+}
+.css-button-sliding-to-left--sand:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--sand:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--sand:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #adb5bd;
 }

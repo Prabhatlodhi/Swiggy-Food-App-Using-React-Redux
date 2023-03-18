@@ -18,6 +18,8 @@ const HeaderComponent = () => {
   const { user } = useContext(UserContexte);
 
   const cartItems = useSelector(store => store.cart.items);
+  
+
 
   return (
     <div className="nav_wrapper  ">
@@ -32,7 +34,7 @@ const HeaderComponent = () => {
         <Link to="/contactus" className="Link">
           <li>Contact</li>
         </Link>
-        <Link to="/" className="Link">
+        <Link to="/cartpage" className="Link">
           <li>Cart - { cartItems.length }</li>
         </Link>
         <Link to="/instamart" className="Link">

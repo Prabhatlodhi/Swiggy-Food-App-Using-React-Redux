@@ -14,8 +14,13 @@ const RestrauntDetails = () => {
   const dispatch = useDispatch();
 
   const handleAddItem = () => {
-    dispatch(additem("huhu"));
+    dispatch(additem("huhu"))
   };
+
+  const addFoodItem = (item)=>{
+    // console.log({...item[0]})
+    dispatch(additem(item))
+  }
 
   let restData = specificRestraurant?.cards[0]?.card?.card?.info;
 
@@ -23,7 +28,9 @@ const RestrauntDetails = () => {
     // console.log(specificRestraurant);
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards[0].card.info.name
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[3].card.card.itemCards[0].card.info.category
+
     // cards[0].card.card.info.sla.slaString
+
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards
     //groupedCard.cardGroupMap.REGULAR.cards[2]
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[3].card.card.itemCards[1].card.info.offerTags[0].subTitle
@@ -32,14 +39,15 @@ const RestrauntDetails = () => {
   if (!specificRestraurant) {
     return <Shimmer />;
   }
+ 
 
   let ITEMS =
-    specificRestraurant.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card
-      .card.itemCards;
-  let OFFERS =
-    specificRestraurant.cards[2].groupedCard.cardGroupMap.REGULAR.cards[3].card
-      .card.itemCards[1].card.info.offerTags;
-
+    specificRestraurant?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
+      ?.card?.itemCards; 
+  // let OFFERS =
+  //   specificRestraurant?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card
+  //     ?.card?.itemCards[1]?.card?.info?.offerTags;
+ 
   return (
     <div className="restraruntDetails">
       <div className="resWrapper">
@@ -80,27 +88,30 @@ const RestrauntDetails = () => {
                     <b>{item.card.info.name}</b>
                   </p>
                   <p>₹ {item.card.info.price / 100}</p>
-                  {OFFERS?.map((offers) => (
+                  {/* {OFFERS?.map((offers) => (
                     <>
                       <p className="swiggyoffers">{offers.subTitle}</p>
                       <p className="swiggyoffers">{offers.header}</p>
                     </>
-                  ))}
+                  ))} */}
                   {/* <p className="swiggycat">{item.card.info.category}</p> */}
                   <p className="menudescription">
                     {item.card.info.description}
                   </p>
                 </div>
-                <div>
-                  <img
+                <div className="wwrpaerImage">
+                  <ul className="listWrapper">
+                    <li><img
                     src={
                       "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
                       item.card.info.imageId
                     }
                     alt=""
                     className="menuImage"
-                  />
-                  <button onClick={() => handleAddItem()}>Add Item</button>
+                  /> </li>
+                  <li>
+                  <button onClick={() => addFoodItem(item)} className="css-button-sliding-to-left--sand" >Add Item</button></li>
+                  </ul>
                 </div>
               </div>
             </li>

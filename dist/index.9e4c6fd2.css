@@ -166,8 +166,8 @@
 }
 
 .individualItem {
-  width: 890px;
-  height: 150px;
+  width: 900px;
+  height: 160px;
   border-bottom: 1px solid gray;
   justify-content: space-between;
   align-items: center;
@@ -189,11 +189,11 @@
 .menuImage {
   width: 190px;
   border-radius: 10px;
-  padding-left: 20px;
 }
 
 .menudes {
   text-align: left;
+  padding-right: 50px;
 }
 
 .nameee {
@@ -228,6 +228,73 @@
 .ratingdetails {
   text-align: center;
   padding: 4px 4px 4px 20px;
+}
+
+.checkoutitem {
+  text-align: center;
+}
+
+.cardofCheckout {
+  width: 800px;
+  border: 1px solid #000;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+.restraurentImageofCheck {
+  width: 220px;
+}
+
+.listWrapper {
+  list-style: none;
+}
+
+.listWrapper button {
+  padding: 5px;
+  position: relative;
+  bottom: 20px;
+}
+
+.css-button-sliding-to-left--sand {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 0;
+  color: #adb5bd;
+  background: #fff;
+  border: 2px solid #adb5bd;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: all .3s;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.css-button-sliding-to-left--sand:hover {
+  color: #fff;
+}
+
+.css-button-sliding-to-left--sand:hover:after {
+  width: 100%;
+}
+
+.css-button-sliding-to-left--sand:after {
+  content: "";
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background: #adb5bd;
+  transition: all .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
