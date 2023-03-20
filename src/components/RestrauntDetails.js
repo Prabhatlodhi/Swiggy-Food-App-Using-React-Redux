@@ -24,6 +24,8 @@ const RestrauntDetails = () => {
 
   let restData = specificRestraurant?.cards[0]?.card?.card?.info;
 
+
+
   {
     // console.log(specificRestraurant);
     //cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards[0].card.info.name
@@ -40,10 +42,12 @@ const RestrauntDetails = () => {
     return <Shimmer />;
   }
  
-
+  // cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.categories[0].itemCards[0].card.info
   let ITEMS =
     specificRestraurant?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
-      ?.card?.itemCards; 
+      ?.card?.categories[0].itemCards; 
+
+      console.log(specificRestraurant)
   // let OFFERS =
   //   specificRestraurant?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card
   //     ?.card?.itemCards[1]?.card?.info?.offerTags;

@@ -19,9 +19,10 @@ const Body = ({user}) => {
   async function fetchDatafromAPI() {
     const data = await fetch(SWIGGY_API);
     const json = await data.json();
-
-    setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    console.log(json)
+    //data.cards[0].data.data.cards[0].data.name
+    setAllRestaurants(json?.data?.cards[0]?.data?.data?.cards);
+    setFilteredRestaurants(json?.data?.cards[0]?.data?.data?.cards);
   }
 
   const isOnline = useOnline();
