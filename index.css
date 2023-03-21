@@ -319,3 +319,11 @@
   height: 100%;
   background: #adb5bd;
 }
+
+.footer{
+  text-align: center;
+  position: relative;
+  left: 0;
+  /* top: 58vh;  */
+  width: 100%;
+}

@@ -23,7 +23,7 @@ const ItemsInCarts = ({
          
           {/* <h3>{itemAttribute.vegClassifier} </h3>  */}
          
-          <h1 className=""> {price / 100}</h1>
+          <h1 className="">₹ {price / 100}</h1>
           <p className=" "> {description}</p>
         </div>
         <div>

@@ -57573,8 +57573,15 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-        children: "Footer"
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "footer",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+            children: "Footer"
+        }, void 0, false, {
+            fileName: "src/components/Footer.js",
+            lineNumber: 3,
+            columnNumber: 10
+        }, undefined)
     }, void 0, false, {
         fileName: "src/components/Footer.js",
         lineNumber: 2,
@@ -58113,8 +58120,8 @@ var _reselect = require("reselect");
 // src/getDefaultMiddleware.ts
 var _reduxThunk = require("redux-thunk");
 var _reduxThunkDefault = parcelHelpers.interopDefault(_reduxThunk);
-var global = arguments[3];
 var process = require("b37326709fae04f5");
+var global = arguments[3];
 var __extends = undefined && undefined.__extends || function() {
     var extendStatics = function(d, b) {
         extendStatics = Object.setPrototypeOf || ({
@@ -62116,7 +62123,7 @@ const ItemsInCarts = ({ name , cuisines , rating , imageId , costForTwoString , 
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 className: "",
                                 children: [
-                                    " ",
+                                    "₹ ",
                                     price / 100
                                 ]
                             }, void 0, true, {
