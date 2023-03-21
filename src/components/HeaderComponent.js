@@ -19,10 +19,8 @@ const HeaderComponent = () => {
 
   const cartItems = useSelector(store => store.cart.items);
   
-
-
   return (
-    <div className="nav_wrapper  ">
+    <div className="nav_wrapper">
       <Title />
       <ul className="nav_item">
         <Link to="/" className="Link">

@@ -13,9 +13,9 @@ const RestrauntDetails = () => {
 
   const dispatch = useDispatch();
 
-  const handleAddItem = () => {
-    dispatch(additem("huhu"))
-  };
+  // const handleAddItem = () => {
+  //   dispatch(additem("huhu"))
+  // };
 
   const addFoodItem = (item)=>{
     // console.log({...item[0]})
@@ -47,7 +47,7 @@ const RestrauntDetails = () => {
     specificRestraurant?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
       ?.card?.categories[0].itemCards; 
 
-      console.log(specificRestraurant)
+      // console.log(specificRestraurant)
   // let OFFERS =
   //   specificRestraurant?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card
   //     ?.card?.itemCards[1]?.card?.info?.offerTags;
